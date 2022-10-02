@@ -37,12 +37,17 @@ body {
     cursor: pointer;
 }
 
+.logo-name {
+    position: absolute;
+    cursor: pointer;
+}
+
 li,
 a,
 button {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 20px;
     color: #edf0f1;
     text-decoration: none;
 }
@@ -98,8 +103,24 @@ button:hover {
     padding: 20px 0 20px 0;
 }
 
+.Product-showroom img {
+    width: 80%;
+}
+
 .Product-showroom img:hover {
     cursor: pointer;
+    width: 70%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+
+.urun1 span,
+* {
+    color: #edf0f1;
+    text-align: center;
+    font-family: "Montserrat";
+    text-decoration: none;
 }
 
 .Product-showroom h4,
@@ -108,10 +129,11 @@ p {
     padding-top: 10px;
 }
 
-.Product-showroom h4,
-span,
-p:hover {
+.Product-showroom div *:hover {
     cursor: pointer;
+    text-decoration: underline;
+
+
 }
 
 .Product-showroom span,
@@ -119,13 +141,26 @@ p {
     color: #cecece;
 }
 
-.urun1 span,
-* {
-    color: #edf0f1;
-    text-align: center;
-    font-family: "Montserrat";
-}
-
 .kirmizi {
     color: rgb(255, 79, 79);
 }
+
+.container {
+    width: 20%;
+    height: 500px;
+    position: relative;
+    margin:auto;
+    display: flex;
+    background-color: #F2F2F2;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+
+
+
+
+  
