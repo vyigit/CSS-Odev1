@@ -8,35 +8,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
 
-/* body {
-    background-color: #413F42;
-} */
-
-/* body {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 500%;
-    animation: gradient 15s ease infinite;
-    height: 100vh;
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-} */
 body {
     background-color: #393E46;
+    width: 100%;
+    height: auto;
 }
 
 .logo {
@@ -78,6 +55,12 @@ header {
 
 }
 
+.nav__links li:hover {
+    width: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.356), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .nav__links li a {
     transition: all 0.3s ease 0s;
 }
@@ -85,6 +68,8 @@ header {
 .nav__links li a:hover {
     transition: all 0.3s ease 0s;
     color: var(--red);
+
+
 }
 
 button {
@@ -164,6 +149,8 @@ p {
     height: 500px;
     position: relative;
     margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
     background-color: #cacaca;
     justify-content: space-evenly;
@@ -189,21 +176,37 @@ h4 {
 }
 
 .contact-link input {
-    width: 300px;
-    height: 40px;
     text-align: left;
+    padding-left: 10px;
+    width: 18rem;
+    height: 35px;
     padding-left: 10px;
     border-style: groove;
     border-color: rgb(138, 250, 250);
+    color: #000000;
 
 }
 
-.contact-link .textarea {
+.contact-link textarea {
+    text-align: left;
+    padding-left: 10px;
+    width: 18rem;
     height: 100px;
+    color: #000000;
+}
+
+.contact-link textarea::placeholder {
+    color: #acacac;
+    text-align: left;
+
 }
 
 .contact-link input::placeholder {
     color: #acacac;
+    text-align: left;
+
+
+    position: fixed;
 }
 
 .contact-link fieldset {
@@ -236,8 +239,8 @@ h4 {
     width: 100%;
     height: 150px;
     background-color: black;
-    position: fixed;
     bottom: 0px;
+    margin-top: 100px;
 }
 
 .social-icon {
@@ -276,4 +279,113 @@ h4 {
 
 .quick-items a:hover {
     color: var(--red);
+}
+
+/* Help.html Sayfası */
+
+#get-help {
+    width: 100%;
+    height: 80vh;
+}
+
+.get-help h2 {
+    font-size: 2rem;
+    margin: 3rem;
+}
+
+.get-help input {
+    width: 70vh;
+    height: 6vh;
+    border-radius: 10px;
+    border: 1px solid #acacac;
+    text-align: left;
+    margin-bottom: 6rem;
+    padding-left: 10px;
+    color: #000000;
+    background-color: #DD5353;
+}
+
+.get-help input::placeholder {
+    color: aliceblue;
+    font-size: 1rem;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.get-help input:focus {
+    color: #cecece;
+    background-color: #DD5353
+}
+
+.get-help i {
+    position: absolute;
+    margin: 20px 20px 0 -40px;
+}
+
+.get-help i:hover {
+    cursor: pointer;
+}
+
+.get-help hr {
+    margin-top: 100px;
+    width: 100%;
+}
+
+.contact-help h2 {
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.help-kapsa {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.help-kapsa .help-menu {
+    width: min-content;
+}
+
+.help-menu i {
+    font-size: 5rem;
+    width: 10rem;
+    height: auto;
+}
+
+.help-menu i:hover {
+    cursor: pointer;
+}
+
+.help-menu span {
+    font-size: 1rem;
+}
+
+.help-kapsa i {
+    font-size: 5rem;
+    margin: 3rem;
+    padding-bottom: 1rem;
+}
+
+hr {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    height: 2px;
+    border-width: 0;
+    background-color: #cecbcb;
+}
+
+section img {
+    margin-top: 5rem;
+}
+
+section p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #668fce;
+    font-size: 2rem;
+    font-style: italic;
+    font-variant: small-caps;
 }
